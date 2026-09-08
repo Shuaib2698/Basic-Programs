@@ -15,13 +15,12 @@ Don't use set() for this one.'''
 numbers = [4, 7, 2, 9, 7, 5, 2]
 
 def first_rep_ele(numbers):
-    num = {}
+    seen = {}
     for i in numbers:
-        num[i] = num.get(i, 0) + 1
+        if i in seen:
+            return i
+        seen[i] = True
 
-    for key in num:
-        if num[key] > 1:
-            return key
     return False
 
 print(first_rep_ele(numbers))
