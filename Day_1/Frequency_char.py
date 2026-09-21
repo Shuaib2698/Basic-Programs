@@ -19,10 +19,10 @@ def freq_char(n):
     freq = {}
 
     for i in n:
-        if n[i] == 0:
-            n[i] +=1
+        if i not in freq:
+            freq[i] =1
         else:
-            n[i] = 1
+            freq[i] += 1
 
     print(freq)
 
