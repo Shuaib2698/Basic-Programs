@@ -32,9 +32,7 @@ employees = [
 
 def dict_list(employees):
     result = {
-        "IT" : [],
-        "HR" : [],
-        "Finance" : []
+
     }
 
     for emp in employees:
